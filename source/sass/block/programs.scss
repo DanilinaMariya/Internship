@@ -1,0 +1,138 @@
+.programs {
+  position: relative;
+}
+
+.programs__swiper {
+  margin: 30px 0 74px;
+
+  @media (min-width: $width-tablet) {
+    margin: 40px 0;
+  }
+}
+
+.programs__conteiner {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.programs__wrapper {
+  position: relative;
+}
+
+.programs__title {
+  padding: 5px 0;
+
+  @media (min-width: $width-tablet) and (max-width: 1439px) {
+    padding: 3px 0;
+  }
+}
+
+.programs__button-icon {
+  stroke: $color-blue;
+}
+
+.programs__button--prev .programs__button-icon {
+  transform: rotate(-135deg);
+}
+
+.programs__button--next .programs__button-icon {
+  transform: rotate(45deg);
+}
+
+.programs__swiper-buttons {
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $width-tablet) {
+    gap: 10px;
+  }
+}
+
+.programs__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-white;
+    outline: none;
+  }
+}
+
+.programs__button:focus .programs__button-icon {
+  stroke: $color-blue;
+}
+
+.programs__button:active .programs__button-icon {
+  stroke: $color-blue;
+  opacity: 0.7;
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+}
+
+.swiper-button-disabled .programs__button-icon {
+  stroke: $color-grey;
+}
+
+
+.programs__link {
+  width: fit-content;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    left: 15px;
+    bottom: 50px;
+  }
+}
+
+.programs__swiper-controls {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.programs__scrollbar {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+}
+
+.swiper-scrollbar-drag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: $color-blue;
+}
+

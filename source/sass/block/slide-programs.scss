@@ -1,0 +1,240 @@
+.slide-programs {
+  border-radius: 12px;
+  background-color: $color-blue;
+  visibility: hidden;
+}
+
+.swiper-slide-visible {
+  visibility: visible;
+}
+
+//ФОНЫ
+
+.slide-programs--internships {
+  background-image: image-set(
+    url("../../img/programs-mobile-1@2x.webp") type("image/webp") 2x,
+    url("../../img/programs-mobile-1.webp") type("image/webp") 1x,
+    url("../../img/programs-mobile-1@2x.jpg") type("image/jpg") 2x,
+    url("../../img/programs-mobile-1.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/programs-tablet-1@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-tablet-1.webp") type("image/webp") 1x,
+      url("../../img/programs-tablet-1@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-tablet-1.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/programs-desktop-1@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-desktop-1.webp") type("image/webp") 1x,
+      url("../../img/programs-desktop-1@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-desktop-1.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-programs--volunteering {
+  background-image: image-set(
+    url("../../img/programs-mobile-2@2x.webp") type("image/webp") 2x,
+    url("../../img/programs-mobile-2.webp") type("image/webp") 1x,
+    url("../../img/programs-mobile-2@2x.jpg") type("image/jpg") 2x,
+    url("../../img/programs-mobile-2.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/programs-tablet-2@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-tablet-2.webp") type("image/webp") 1x,
+      url("../../img/programs-tablet-2@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-tablet-2.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/programs-desktop-2@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-desktop-2.webp") type("image/webp") 1x,
+      url("../../img/programs-desktop-2@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-desktop-2.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-programs--studies {
+  background-image: image-set(
+    url("../../img/programs-mobile-3@2x.webp") type("image/webp") 2x,
+    url("../../img/programs-mobile-3.webp") type("image/webp") 1x,
+    url("../../img/programs-mobile-3@2x.jpg") type("image/jpg") 2x,
+    url("../../img/programs-mobile-3.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/programs-tablet-3@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-tablet-3.webp") type("image/webp") 1x,
+      url("../../img/programs-tablet-3@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-tablet-3.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/programs-desktop-3@2x.webp") type("image/webp") 2x,
+      url("../../img/programs-desktop-3.webp") type("image/webp") 1x,
+      url("../../img/programs-desktop-3@2x.jpg") type("image/jpg") 2x,
+      url("../../img/programs-desktop-3.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-programs__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 400px;
+  padding: 100px 10px 18px;
+
+  @media (min-width: $width-tablet) {
+    min-height: 420px;
+    padding: 120px 20px 10px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 120px 20px 17px;
+  }
+}
+
+.slide-programs__title {
+  position: relative;
+  min-width: 146px;
+  width: fit-content;
+  max-width: 230px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-blue;
+  padding: 18px 18px 6px;
+  background-color: $color-white;
+  border-radius: 12px 12px 0px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -18px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../../img/angle.svg");
+    transform: rotate(-90deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $width-tablet) {
+    min-width: 173px;
+    max-width: 250px;
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: 194px;
+    max-width: 420px;
+  }
+}
+
+.slide-programs__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px 15px;
+  background-color: $color-white;
+  border-radius: 0px 12px 12px 12px;
+
+  @media (min-width: $width-desktop) {
+    width: 321px;
+  }
+}
+
+.slide-programs__description p {
+  width: 175px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @media (min-width: $width-tablet) {
+    width: 202px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 233px;
+    line-height: 18px;
+  }
+}
+
+.slide-programs__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: $color-blue;
+  border-radius: 50%;
+
+  &:hover,
+  &:active {
+    background-color: $color-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slide-programs__link.link-disabled,
+.slide-programs__link:not([href]) {
+  background-color: $color-grey;
+  pointer-events: none;
+}
+
+.slide-programs__link-icon {
+  stroke: $color-white;
+}
+
+.slide-programs__link:hover .slide-programs__link-icon,
+.slide-programs__link:active .slide-programs__link-icon {
+  stroke: $color-blue;
+  transform: rotate(45deg);
+}
+
+.slide-programs__link:active .slide-programs__link-icon {
+  opacity: 0.7;
+}
+
+.slide-programs__link:focus .slide-programs__link-icon {
+  transform: rotate(45deg);
+}
+
+.slide-programs.slide-programs--duble {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
+}

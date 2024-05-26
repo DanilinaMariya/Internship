@@ -1,0 +1,51 @@
+body {
+  position: relative;
+  min-width: 320px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  color: $color-primary;
+  background-color: $color-background;
+  box-sizing: border-box;
+}
+
+.overfloy {
+  overflow-y: hidden;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $overley-menu;
+    z-index: 5;
+  }
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 50px 15px;
+
+  @media (min-width: $width-tablet) {
+    max-width: $width-tablet;
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    padding: 60px 100px;
+  }
+}

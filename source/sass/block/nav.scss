@@ -1,0 +1,41 @@
+.nav {
+  width: 290px;
+  padding: 0 25px;
+  background-color: $color-blue;
+  border-radius: 16px;
+  overflow: auto;
+
+  @media (min-width: $width-tablet) {
+    width: 286px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0;
+  gap: 28px;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+    outline: none;
+  }
+}

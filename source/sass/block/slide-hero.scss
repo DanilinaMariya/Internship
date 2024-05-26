@@ -1,0 +1,299 @@
+.slide-hero {
+  visibility: hidden;
+  background-color: $color-blue;
+}
+
+.swiper-slide-active {
+  visibility: visible;
+}
+//ФОНЫ
+
+.slide-hero--first {
+  background-image: image-set(
+    url("../../img/hero-mobile-1@2x.webp") type("image/webp") 2x,
+    url("../../img/hero-mobile-1.webp") type("image/webp") 1x,
+    url("../../img/hero-mobile-1@2x.jpg") type("image/jpg") 2x,
+    url("../../img/hero-mobile-1.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/hero-tablet-1@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-tablet-1.webp") type("image/webp") 1x,
+      url("../../img/hero-tablet-1@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-tablet-1.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/hero-desktop-1@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-desktop-1.webp") type("image/webp") 1x,
+      url("../../img/hero-desktop-1@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-desktop-1.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-hero--second {
+  background-image: image-set(
+    url("../../img/hero-mobile-2@2x.webp") type("image/webp") 2x,
+    url("../../img/hero-mobile-2.webp") type("image/webp") 1x,
+    url("../../img/hero-mobile-2@2x.jpg") type("image/jpg") 2x,
+    url("../../img/hero-mobile-2.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/hero-tablet-2@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-tablet-2.webp") type("image/webp") 1x,
+      url("../../img/hero-tablet-2@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-tablet-2.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/hero-desktop-2@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-desktop-2.webp") type("image/webp") 1x,
+      url("../../img/hero-desktop-2@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-desktop-2.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-hero--third {
+  background-image: image-set(
+    url("../../img/hero-mobile-3@2x.webp") type("image/webp") 2x,
+    url("../../img/hero-mobile-3.webp") type("image/webp") 1x,
+    url("../../img/hero-mobile-3@2x.jpg") type("image/jpg") 2x,
+    url("../../img/hero-mobile-3.jpg") type("image/jpg") 1x,
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: image-set(
+      url("../../img/hero-tablet-3@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-tablet-3.webp") type("image/webp") 1x,
+      url("../../img/hero-tablet-3@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-tablet-3.jpg") type("image/jpg") 1x,
+    );
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: image-set(
+      url("../../img/hero-desktop-3@2x.webp") type("image/webp") 2x,
+      url("../../img/hero-desktop-3.webp") type("image/webp") 1x,
+      url("../../img/hero-desktop-3@2x.jpg") type("image/jpg") 2x,
+      url("../../img/hero-desktop-3.jpg") type("image/jpg") 1x,
+    );
+  }
+}
+
+.slide-hero__wrapper {
+  display: flex;
+  align-items: end;
+  padding: 150px 15px 20px;
+  min-height: 568px;
+
+  @media (min-width: $width-tablet) {
+    min-height: 1024px;
+    padding: 200px 45px 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 800px;
+    padding: 200px 100px 60px;
+  }
+}
+
+.slide-hero__title {
+  margin: 0;
+  padding: 20px 14px 16px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-blue;
+  background-color: $color-white;
+  border-radius: 0px 16px 16px 0px;
+
+  @media (min-width: $width-tablet) {
+    width: 659px;
+    padding: 30px 40px 24px;
+    font-size: 36px;
+    line-height: 44px;
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 968px;
+    padding: 40px 50px 30px;
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+
+.slide-hero__conteiner p {
+  position: relative;
+  width: 267px;
+  margin: 0;
+  padding: 0 14px 15px;
+  font-weight: 400;
+  background-color: $color-white;
+  border-radius: 0px 0px 14px 0px;
+
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 10px;
+      height: 10px;
+      background-image: url("../../img/angle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 287px;
+    padding: 0;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 20px
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 446px;
+    line-height: 26px
+  }
+}
+
+.slide-hero__button-wrapper {
+  @media (max-width: 767px) {
+    position: relative;
+    width: 182px;
+    padding: 10px 15px;
+    border-radius: 0px 0px 14px 14px;
+    background-color: $color-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 10px;
+      height: 10px;
+      background-image: url("../../img/angle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.slide-hero__conteiner {
+  @media (min-width: $width-tablet) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    width: 591px;
+    padding: 0 40px 35px;
+    background-color: $color-white;
+    border-radius: 0px 0px 30px 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -19px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/angle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 772px;
+    padding: 0 50px 35px;
+  }
+}
+
+.slide-hero__pagination {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  padding: 10px 16px;
+  gap: 12px;
+  background-color: $color-white;
+  border-radius: 12px 12px 0px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../../img/angle.svg");
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    background-size: cover;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 14px 20px;
+    border-radius: 20px 20px 0px 0px;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      right: -19px;
+    }
+  }
+}
+
+.slide-hero__pagination-item {
+  display: flex;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid $color-blue;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $color-blue;
+    border-color: $color-white;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background-color: $color-blue;
+    outline: none;
+  }
+
+  &--activ,
+  &:active {
+    background-color: $color-dark-blue;
+    border-color: $color-dark-blue;
+    opacity: 1;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -19,6 +19,16 @@
 .grant__image {
   display: block;
   border-radius: 16px;
+  margin: 0 auto;
+  max-width: 290px;
+
+  @media (min-width: $width-tablet) {
+    max-width: 678px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 498px;
+  }
 }
 
 .grant__title + p {

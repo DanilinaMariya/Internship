@@ -237,9 +237,9 @@
                   <div class="slide-programs__description">
                     <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
                     <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
-                    <a class="slide-programs__link" href="#">
+                    <a class="slide-programs__link slide-link" href="#">
                       <span class="visually-hidden">Перейти на страницу программы.</span>
-                      <svg class="slide-programs__link-icon" width="10" height="10">
+                      <svg class="slide-programs__link-icon slide-link__icon" width="10" height="10">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
                     </a>
@@ -253,9 +253,9 @@
                   <h3 class="slide-programs__title">Волонтёрство</h3>
                   <div class="slide-programs__description">
                     <p>Помогайте другим и развивайте свои лидерские качества</p>
-                    <a class="slide-programs__link" href="#">
+                    <a class="slide-programs__link slide-link" href="#">
                       <span class="visually-hidden">Перейти на страницу программы.</span>
-                      <svg class="slide-programs__link-icon" width="10" height="10">
+                      <svg class="slide-programs__link-icon slide-link__icon" width="10" height="10">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
                     </a>
@@ -269,9 +269,25 @@
                   <h3 class="slide-programs__title">Учёба</h3>
                   <div class="slide-programs__description">
                     <p>Получите образование и измените своё будущее.</p>
-                    <a class="slide-programs__link" href="#">
+                    <a class="slide-programs__link slide-link" href="#">
                       <span class="visually-hidden">Перейти на страницу программы.</span>
-                      <svg class="slide-programs__link-icon" width="10" height="10">
+                      <svg class="slide-programs__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="programs__slide slide-programs slide-programs--internships swiper-slide">
+              <div class="slide-programs__wrapper">
+                <div class="slide-programs__content">
+                  <h3 class="slide-programs__title">Религия</h3>
+                  <div class="slide-programs__description">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <a class="slide-programs__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу программы.</span>
+                      <svg class="slide-programs__link-icon slide-link__icon" width="10" height="10">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
                     </a>
@@ -284,15 +300,15 @@
         <div class="programs__swiper-controls">
           <div class="programs__scrollbar swiper-pagination"></div>
           <div class="programs__swiper-buttons">
-            <button class="programs__button programs__button--prev swiper-button-prev">
+            <button class="programs__button programs__button--prev swiper-button swiper-button--prev swiper-button-prev">
               <span class="visually-hidden">следующий слайд.</span>
-              <svg class="programs__button-icon" width="10" height="10">
+              <svg class="swiper-button__icon" width="10" height="10">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
-            <button class="programs__button programs__button--next swiper-button-next">
+            <button class="programs__button programs__button--next swiper-button swiper-button--next swiper-button-next">
               <span class="visually-hidden">предыдущий слайд.</span>
-              <svg class="programs__button-icon" width="10" height="10">
+              <svg class="swiper-button__icon" width="10" height="10">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
@@ -331,7 +347,481 @@
         </ul>
       </div>
     </section>
-    <section data-test="news" id="news">news</section>
+    <section class="news wrapper" data-test="news" id="news">
+      <h2 class="news__title title">Новости и материалы</h2>
+      <div class="news__tabs tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <button class="tabs__button tabs__button--activ">общее</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button">Волонтёрство</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button">Стажировки</button>
+            </li>
+          <li class="tabs__item">
+            <button class="tabs__button">Карьера</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button">путешествия</button>
+          </li>
+        </ul>
+      </div>
+      <div class="news__wrapper">
+        <div class="news__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--interview swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">23/03/2023</span>
+                  <h3 class="slide-news__title">Интервью с участницей программы стажировки</h3>
+                  <div class="slide-news__description">
+                    <p>Саша рассказывает, как&nbsp;попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--journey swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">20/03/2023</span>
+                  <h3 class="slide-news__title">Путешествуем по миру</h3>
+                  <div class="slide-news__description">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--volunteering swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">17/03/2023</span>
+                  <h3 class="slide-news__title">Новая программа волонтёрства</h3>
+                  <div class="slide-news__description">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__slide slide-news slide-news--career swiper-slide">
+              <div class="slide-news__wrapper">
+                <div class="slide-news__content">
+                  <span class="slide-news__date">10/03/2023</span>
+                  <h3 class="slide-news__title">Построй свою карьеру</h3>
+                  <div class="slide-news__description">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <!-- .link-disabled - класс для блокировки ссылок, чепез удаление href так же реализивано -->
+                    <a class="slide-news__link slide-link" href="#">
+                      <span class="visually-hidden">Перейти на страницу новости.</span>
+                      <svg class="slide-news__link-icon slide-link__icon" width="10" height="10">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="news__controls">
+          <button class="news__button news__button--prev swiper-button swiper-button--prev swiper-button-prev">
+            <svg class="swiper-button__icon" width="10" height="10">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+          <div class="news__pagination swiper-pagination"></div>
+          <button class="news__button news__button--next swiper-button swiper-button--next swiper-button-next">
+            <svg class="swiper-button__icon" width="10" height="10">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
     <section class="faq wrapper" data-test="FAQ">
       <h2 class="faq__title title">Вопросы и ответы</h2>
       <div class="faq__box">
@@ -382,10 +872,261 @@
         </div>
       </div>
     </section>
-    <section data-test="reviews" id="reviews">reviews</section>
-    <section data-test="contacts" id="contacts">contacts</section>
-    <section data-test="form">form</section>
-    <section data-test="footer">footer</section>
+    <section class="reviews wrapper" data-test="reviews" id="reviews">
+      <h2 class="reviews__title title">Отзывы</h2>
+      <div class="reviews__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="reviews__slide slide-reviews swiper-slide">
+            <div class="slide-reviews__content">
+              <div class="slide-reviews__header">
+                <div class="slide-reviews__user">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" width="60" height="60">
+                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                  </picture>
+                  <h4 class="slide-reviews__name">Лола Алекс</h4>
+                </div>
+                <div class="slide-reviews__info">
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">программа</h4>
+                    <span class="slide-reviews__description">Masa Art Challenge</span>
+                  </div>
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">Дата</h4>
+                    <span class="slide-reviews__description">Осень 2022</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="slide-reviews__title">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+              <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её&nbsp;от других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.</p>
+            </div>
+          </div>
+          <div class="reviews__slide slide-reviews swiper-slide">
+            <div class="slide-reviews__content">
+              <div class="slide-reviews__header">
+                <div class="slide-reviews__user">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" width="60" height="60">
+                    <img class="slide-reviews__image" src="img/reviews-2.png" srcset="img/reviews-2.png 1x, img/reviews-2@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                  </picture>
+                  <h4 class="slide-reviews__name">Давид Иванов</h4>
+                </div>
+                <div class="slide-reviews__info">
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">программа</h4>
+                    <span class="slide-reviews__description">Volunteer Chance</span>
+                  </div>
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">Дата</h4>
+                    <span class="slide-reviews__description">Лето 2022</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="slide-reviews__title">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h3>
+              <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+            </div>
+          </div>
+          <div class="reviews__slide slide-reviews swiper-slide">
+            <div class="slide-reviews__content">
+              <div class="slide-reviews__header">
+                <div class="slide-reviews__user">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" width="60" height="60">
+                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                  </picture>
+                  <h4 class="slide-reviews__name">Лола Алекс</h4>
+                </div>
+                <div class="slide-reviews__info">
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">программа</h4>
+                    <span class="slide-reviews__description">Masa Art Challenge</span>
+                  </div>
+                  <div class="slide-reviews__info-wrapper">
+                    <h4 class="slide-reviews__subtitle">Дата</h4>
+                    <span class="slide-reviews__description">Осень 2022</span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="slide-reviews__title">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+              <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__controls">
+        <div class="reviews__scrollbar swiper-pagination"></div>
+        <div class="reviews__swiper-buttons">
+          <button class="reviews__button reviews__button--prev swiper-button swiper-button--prev swiper-button-prev" type="button">
+            <span class="visually-hidden">следующий слайд.</span>
+                <svg class="swiper-button__icon" width="10" height="10">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+          </button>
+          <button class="reviews__button reviews__button--next swiper-button swiper-button--next swiper-button-next" type="button">
+            <span class="visually-hidden">предыдущий слайд.</span>
+                <svg class="swiper-button__icon" width="10" height="10">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section class="contacts" data-test="contacts" id="contacts">
+      <div class="contacts__wrapper wrapper">
+        <h2 class="contacts__titte title title--light">Контакты</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle">центральный офис</h3>
+            <address class="contacts__description">г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle">Телефон</h3>
+            <a class="contacts__description" href="tel:+796387687676">+7 963 876 876 76</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle">Email</h3>
+            <a class="contacts__description" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1240" height="486">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.png 2x" width="678" height="500">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="290" height="240">
+            <source type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1240" height="486">
+            <source type="image/png" media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="678" height="500">
+            <img class="contacts__image" src="img/map-mobile.png" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x" width="290" height="240" alt="Как проехать.">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="form-section" data-test="form">
+      <div class="form-section__wrapper">
+        <form class="form-section__form form" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="form__title">Напишите нам</h2>
+          <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label">
+                <span class="form__subtitle">Имя</span>
+                <input class="form__input" type="text" name="name" required>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                <span class="form__subtitle">Телефон</span>
+                <input class="form__input form__input--tel" type="tel" name="phone" pattern="^(\+7)[0-9]{10}$" value="+7" required >
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                <span class="form__subtitle">Ваше сообщение</span>
+                <textarea class="form__input form__input--textarea" name="message" required></textarea>
+              </label>
+            </li>
+            <li class="form__item ">
+              <label class="form__label">
+                <span class="form__subtitle">Выберите город</span>
+                <div class="form__input-warapper">
+                  <input class="form__input form__input--city" type="text" name="city" value="" readonly>
+                  <svg class="form__input-icon" width="16" height="16">
+                    <use href="/__spritemap#sprite-dropdown"></use>
+                  </svg>
+                </div>
+              </label>
+              <div class="form__dropdown">
+                <ul class="form__dropdown-list">
+                  <li class="form__dropdown-item form__dropdown-item--activ"></li>
+                  <li class="form__dropdown-item">Санкт-Петербург</li>
+                  <li class="form__dropdown-item">Москва</li>
+                  <li class="form__dropdown-item">Новосибирск</li>
+                  <li class="form__dropdown-item">Казань</li>
+                </ul>
+              </div>
+            </li>
+            <li class="form__item">
+              <label class="form__label form__label--checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="agreement" required>
+                <span class="form__checkbox">
+                  <svg class="form__input-check" width="10" height="10">
+                    <use href="/__spritemap#sprite-check"></use>
+                  </svg>
+                </span>
+                <span class="form__subtitle">Я согласен на обработку моих персональных данных</span>
+              </label>
+            </li>
+          </ul>
+          <button class="form__button button button--light" type="submit">
+            <span class="form__button-description button__description">отправить</span>
+            <span class="form__button__icon-wrapper button__icon-wrapper">
+              <svg class="form__button__icon button__icon" width="10" height="10">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="footer wrapper" data-test="footer">
+      <div class="footer__nav nav-footer">
+        <span class="footer__logo logo">
+          <svg class="footer__logo-icon logo__icon" width="30" height="30">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
+        </span>
+        <ul class="nav-footer__list">
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#about">О проекте</a>
+          </li>
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#programs">Программы</a>
+          </li>
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#grant">Как поехать</a>
+          </li>
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#news">Новости</a>
+          </li>
+          <li class="nav-footer__item">
+            <a class="nav-footer__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
+        <p class="footer__copyright-item">Стажировка © 2023 Все права защищены</p>
+      </div>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Группа Вконтакте.</span>
+            <svg class="socials__icon" width="16" height="16">
+              <use href="/__spritemap#sprite-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://ok.ru/">
+            <span class="visually-hidden">Страница в Однокласниках.</span>
+            <svg class="socials__icon" width="16" height="16">
+              <use href="/__spritemap#sprite-ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.reddit.com/">
+            <span class="visually-hidden">Страница в Reddit.</span>
+            <svg class="socials__icon" width="16" height="16">
+              <use href="/__spritemap#sprite-reddit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
     <script type="module" src="js/main.js"></script>
   </body>
 

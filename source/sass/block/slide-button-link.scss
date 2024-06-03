@@ -1,0 +1,94 @@
+.slide-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: $color-blue;
+  border-radius: 50%;
+
+  &:hover,
+  &:active {
+    background-color: $color-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slide-link.link-disabled,
+.slide-link:not([href]) {
+  background-color: $color-grey;
+  pointer-events: none;
+}
+
+.slide-link__icon {
+  stroke: $color-white;
+}
+
+.slide-link:hover .slide-link__icon,
+.slide-link:active .slide-link__icon {
+  stroke: $color-blue;
+  transform: rotate(45deg);
+}
+
+.slide-link:active .slide-link__icon {
+  opacity: 0.7;
+}
+
+.slide-link:focus .slide-link__icon {
+  transform: rotate(45deg);
+}
+
+.swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-white;
+    outline: none;
+  }
+}
+
+.swiper-button__icon {
+  stroke: $color-blue;
+}
+
+.swiper-button--prev .swiper-button__icon {
+  transform: rotate(-135deg);
+}
+
+.swiper-button--next .swiper-button__icon {
+  transform: rotate(45deg);
+}
+
+
+.swiper-button:focus .swiper-button__icon {
+  stroke: $color-blue;
+}
+
+.swiper-button:active .swiper-button__icon {
+  stroke: $color-blue;
+  opacity: 0.7;
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+}
+
+.swiper-button-disabled .swiper-button__icon {
+  stroke: $color-grey;
+}

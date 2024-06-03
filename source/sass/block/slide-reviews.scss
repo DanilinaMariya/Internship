@@ -1,0 +1,154 @@
+.slide-reviews {
+  @media (min-width: $width-tablet) {
+    max-width: 560px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 604px;
+  }
+}
+
+.slide-reviews__content {
+  padding: 32px 17px;
+  border: 2px solid $color-blue;
+  border-radius: 16px;
+
+  @media (min-width: $width-tablet) {
+    padding: 50px 52px;
+    min-height: 417px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 483px;
+  }
+}
+
+.slide-reviews__header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.slide-reviews__user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    gap: 15px;
+    width: fit-content;
+  }
+}
+
+.slide-reviews__image {
+  display: block;
+  border-radius: 50%;
+
+  @media (min-width: $width-tablet) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.slide-reviews__info {
+  display: flex;
+  gap: 25px;
+}
+
+.slide-reviews__name {
+  max-width: 75px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-blue;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    font-weight: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 18px;
+  }
+}
+
+.slide-reviews__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $width-tablet) {
+    gap: 11px;
+  }
+}
+
+.slide-reviews__subtitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: $color-blue;
+}
+
+.slide-reviews__description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  opacity: 0.9;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 1;
+  }
+
+  @media (min-width: $width-desktop) {
+    line-height: 18px;
+  }
+}
+
+.slide-reviews__title {
+  padding: 25px 0 20px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-blue;
+
+  @media (min-width: $width-tablet) {
+    padding: 30px 0 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.slide-reviews__content p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    line-height: 26px;
+    max-width: 470px;
+  }
+}

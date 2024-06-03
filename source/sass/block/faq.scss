@@ -33,6 +33,14 @@
     background-color: $color-blue;
   }
 
+  &:hover {
+    background-color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-white;
+  }
+
   @media (min-width: $width-tablet) {
     padding: 32px;
   }
@@ -40,6 +48,20 @@
   @media (min-width: $width-desktop) {
     padding: 42px;
   }
+}
+
+.faq__content--open {
+  &:hover {
+    background-color: $color-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+}
+
+.faq__content:active .faq__content-title {
+  color: $color-dark-blue;
 }
 
 .faq__content-title {
@@ -65,6 +87,10 @@
   color: $color-white;
 }
 
+.faq__content--open:active .faq__content-title {
+  color: $color-white;
+}
+
 .faq__visible {
   display: flex;
   justify-content: space-between;
@@ -85,7 +111,7 @@
 
 .faq__hidden p {
   font-weight: 400;
-  color: $color-white;
+  color: $color-background;
 
   @media (min-width: $width-tablet) {
     font-size: 16px;
@@ -104,6 +130,7 @@
   border-radius: 50%;
   border: 1px solid transparent;
   background-color: $color-blue;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -138,4 +165,73 @@
   &::before {
     content: none;
   }
+}
+
+.faq__content--open .faq__control:hover,
+.faq__content--open .faq__control:focus {
+  background-color: transparent;
+  border-color: $color-white;
+  outline: none;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.faq__content--open:active .faq__control,
+.faq__content--open .faq__control:active {
+  background-color: $color-white;
+  border-color: $color-white;
+
+  &::after {
+    background-color: $color-dark-blue;
+  }
+}
+
+.faq__content:hover .faq__control,
+.faq__control:hover,
+.faq__control:focus {
+  border-color: $color-blue;
+  background-color: transparent;
+  outline: none;
+  &::after,
+  &::before {
+    background-color: $color-blue;
+  }
+}
+
+.faq__content--open:hover .faq__control {
+  background-color: transparent;
+  border-color: $color-white;
+  outline: none;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.faq__control:active {
+  background-color: $color-dark-blue;
+
+  &::after,
+  &::before {
+    background-color: $color-white;
+  }
+}
+
+.faq__control:disabled {
+  background-color: $color-grey;
+
+  &::after,
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+.faq__content:has(>.faq__visible>.faq__control:focus) {
+  background-color: $color-white;
+}
+
+.faq__content--open:has(>.faq__visible>.faq__control:focus) {
+  background-color: $color-blue;
 }

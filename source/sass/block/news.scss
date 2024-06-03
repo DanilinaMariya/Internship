@@ -1,0 +1,88 @@
+.news__title {
+  text-align: center;
+}
+
+.news__controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 40px;
+  }
+}
+
+.news__pagination .swiper-pagination-bullet {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  padding: 6px 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: rgba(49, 109, 194, 1);
+  cursor: pointer;
+
+  &-active {
+    background-color: $color-blue;
+    color: $color-white;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border-color: $color-blue;
+    color: $color-blue;
+  }
+
+  &:focus {
+    border-color: $color-blue;
+    color: $color-blue;
+    background-color: $color-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    border-color: transparent;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    &-active {
+      font-weight: 400;
+    }
+  }
+}
+
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  opacity: 1;
+}
+
+// .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next {
+//   transform: scale(1);
+// }
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-prev {
+  transform: scale(1);
+}

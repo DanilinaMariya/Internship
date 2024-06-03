@@ -1,5 +1,9 @@
 .programs {
   position: relative;
+
+  @media (min-width: $width-tablet) and (max-width: 1439px) {
+    padding-right: 0;
+  }
 }
 
 .programs__swiper {
@@ -30,18 +34,6 @@
   }
 }
 
-.programs__button-icon {
-  stroke: $color-blue;
-}
-
-.programs__button--prev .programs__button-icon {
-  transform: rotate(-135deg);
-}
-
-.programs__button--next .programs__button-icon {
-  transform: rotate(45deg);
-}
-
 .programs__swiper-buttons {
   width: fit-content;
   display: flex;
@@ -58,45 +50,6 @@
     gap: 10px;
   }
 }
-
-.programs__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: none;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:focus,
-  &:active {
-    background-color: $color-white;
-    outline: none;
-  }
-}
-
-.programs__button:focus .programs__button-icon {
-  stroke: $color-blue;
-}
-
-.programs__button:active .programs__button-icon {
-  stroke: $color-blue;
-  opacity: 0.7;
-}
-
-.swiper-button-disabled {
-  pointer-events: none;
-}
-
-.swiper-button-disabled .programs__button-icon {
-  stroke: $color-grey;
-}
-
 
 .programs__link {
   width: fit-content;
@@ -116,7 +69,7 @@
   }
 }
 
-.programs__scrollbar {
+.programs__swiper-controls .programs__scrollbar {
   display: none;
 
   @media (min-width: $width-tablet) {
@@ -125,6 +78,10 @@
     width: 562px;
     height: 2px;
     background-color: rgba(49, 109, 194, 0.2);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1136px;
   }
 }
 

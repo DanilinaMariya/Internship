@@ -6,3 +6,4 @@ import './news';
 import './reviews';
 import './dropdown';
 import './form';
+import './modal';

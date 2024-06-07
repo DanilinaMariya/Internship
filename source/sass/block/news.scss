@@ -19,6 +19,8 @@
 }
 
 .news__pagination .swiper-pagination-bullet {
+  position: relative;
+  margin-right: 16px;
   width: 26px;
   height: 26px;
   text-align: center;
@@ -33,6 +35,9 @@
   text-transform: uppercase;
   color: rgba(49, 109, 194, 1);
   cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  transition: left 0.3s ease-in-out;
 
   &-active {
     background-color: $color-blue;
@@ -64,6 +69,7 @@
     height: 32px;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 20px;
   }
 
   @media (min-width: $width-desktop) {
@@ -73,16 +79,24 @@
   }
 }
 
-
-.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.news__pagination .swiper-pagination-bullet.swiper-bullet--visible {
+  transform: scale(1);
   opacity: 1;
 }
 
-// .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next {
-//   transform: scale(1);
-// }
+.news__controls .news__pagination.swiper-pagination {
+  position: relative;
+  overflow: hidden;
+  max-width: 168px;
+  white-space: nowrap;
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-prev {
-  transform: scale(1);
+  @media (min-width: $width-tablet) {
+    max-width: 208px;
+  }
+}
+
+.news__wrapper .news__swiper-wrapper {
+  @media (max-width: 767px) {
+    max-height: 590px;
+  }
 }

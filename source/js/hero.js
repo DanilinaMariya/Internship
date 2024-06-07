@@ -18,7 +18,7 @@ const swiperHero = new Swiper ('.hero__swiper', {
 );
 
 const onHeroPaginationButtonClick = (el) => {
-  const id = el.id;
+  const id = el.dataset.id;
   swiperHero.slideTo(id - 1);
 };
 

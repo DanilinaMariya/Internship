@@ -1,5 +1,4 @@
 body {
-  position: relative;
   min-width: 320px;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
@@ -24,7 +23,10 @@ body {
     background-color: $overley-menu;
     z-index: 5;
   }
+}
 
+.overfloy-modal {
+  overflow-y: hidden;
 }
 
 *,

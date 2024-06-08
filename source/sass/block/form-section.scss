@@ -1,5 +1,5 @@
 .form-section {
-  padding: 40px 0;
+  padding: 43px 0 40px;
   margin: 0 auto;
 
   @media (min-width: $width-tablet) {
@@ -9,11 +9,12 @@
 
   @media (min-width: $width-desktop) {
     max-width: $width-desktop;
-    padding: 100px 60px;
+    padding: 60px 100px;
   }
 }
 
 .form-section__wrapper {
+  background-color: $color-grey;
   background-image: image-set(
     url("../../img/form-mobile@2x.webp") type("image/webp") 2x,
     url("../../img/form-mobile.webp") type("image/webp") 1x,
@@ -36,7 +37,7 @@
     );
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     background-image: image-set(
       url("../../img/form-desktop@2x.webp") type("image/webp") 2x,
       url("../../img/form-desktop.webp") type("image/webp") 1x,

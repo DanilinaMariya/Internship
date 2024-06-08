@@ -8,13 +8,13 @@
     flex-direction: row;
     gap: 0;
     justify-content: space-between;
-    width: 678px;
+    width: 676px;
   }
 
   @media (min-width: $width-desktop) {
     max-width: 100%;
     width: auto;
-    gap: 0 52px;
+    gap: 0 53px;
   }
 }
 

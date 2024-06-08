@@ -43,7 +43,7 @@
 
   @media (min-width: $width-tablet) {
     padding-left: 30px;
-    gap: 30px;
+    gap: 31px;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
@@ -105,12 +105,14 @@
   justify-content: center;
   align-items: center;
   width: 34px;
+  min-width: 34px;
   height: 34px;
   border-radius: 44px;
   background-color: $color-blue;
 
   @media (min-width: $width-tablet) {
     width: 46px;
+    min-width: 46px;
     height: 46px;
   }
 }

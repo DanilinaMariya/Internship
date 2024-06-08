@@ -1,6 +1,6 @@
 .slide-hero {
   visibility: hidden;
-  background-color: $color-blue;
+  background-color: $color-grey;
 }
 
 .swiper-slide-active {
@@ -181,7 +181,7 @@
 .slide-hero__button-wrapper {
   @media (max-width: 767px) {
     position: relative;
-    width: 182px;
+    width: 184px;
     padding: 10px 15px;
     border-radius: 0px 0px 14px 14px;
     background-color: $color-white;
@@ -205,9 +205,10 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: start;
     gap: 30px;
-    width: 591px;
+    width: 593px;
     padding: 0 40px 35px;
     background-color: $color-white;
     border-radius: 0px 0px 30px 30px;
@@ -216,9 +217,9 @@
       content: "";
       position: absolute;
       top: 0;
-      right: -19px;
-      width: 20px;
-      height: 20px;
+      right: -26px;
+      width: 26px;
+      height: 26px;
       background-image: url("../../img/angle.svg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -226,8 +227,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 772px;
+    width: 775px;
     padding: 0 50px 35px;
+    align-items: center;
   }
 }
 
@@ -244,7 +246,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: -9px;
+    right: -10px;
     width: 10px;
     height: 10px;
     background-image: url("../../img/angle.svg");

@@ -2,6 +2,7 @@
   border-radius: 12px;
   background-color: $color-blue;
   visibility: hidden;
+  background-color: $color-grey;
 
   @media (min-width: $width-tablet) {
     max-width: 324px;
@@ -19,7 +20,7 @@
 //ФОНЫ
 
 .slide-programs--internships {
-  background-image: image-set(
+  background-image: linear-gradient($overley-image, $overley-image), image-set(
     url("../../img/programs-mobile-1@2x.webp") type("image/webp") 2x,
     url("../../img/programs-mobile-1.webp") type("image/webp") 1x,
     url("../../img/programs-mobile-1@2x.jpg") type("image/jpg") 2x,
@@ -30,7 +31,7 @@
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-tablet-1@2x.webp") type("image/webp") 2x,
       url("../../img/programs-tablet-1.webp") type("image/webp") 1x,
       url("../../img/programs-tablet-1@2x.jpg") type("image/jpg") 2x,
@@ -39,7 +40,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-desktop-1@2x.webp") type("image/webp") 2x,
       url("../../img/programs-desktop-1.webp") type("image/webp") 1x,
       url("../../img/programs-desktop-1@2x.jpg") type("image/jpg") 2x,
@@ -49,7 +50,7 @@
 }
 
 .slide-programs--volunteering {
-  background-image: image-set(
+  background-image: linear-gradient($overley-image, $overley-image), image-set(
     url("../../img/programs-mobile-2@2x.webp") type("image/webp") 2x,
     url("../../img/programs-mobile-2.webp") type("image/webp") 1x,
     url("../../img/programs-mobile-2@2x.jpg") type("image/jpg") 2x,
@@ -60,7 +61,7 @@
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-tablet-2@2x.webp") type("image/webp") 2x,
       url("../../img/programs-tablet-2.webp") type("image/webp") 1x,
       url("../../img/programs-tablet-2@2x.jpg") type("image/jpg") 2x,
@@ -69,7 +70,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-desktop-2@2x.webp") type("image/webp") 2x,
       url("../../img/programs-desktop-2.webp") type("image/webp") 1x,
       url("../../img/programs-desktop-2@2x.jpg") type("image/jpg") 2x,
@@ -79,7 +80,7 @@
 }
 
 .slide-programs--studies {
-  background-image: image-set(
+  background-image: linear-gradient($overley-image, $overley-image), image-set(
     url("../../img/programs-mobile-3@2x.webp") type("image/webp") 2x,
     url("../../img/programs-mobile-3.webp") type("image/webp") 1x,
     url("../../img/programs-mobile-3@2x.jpg") type("image/jpg") 2x,
@@ -90,7 +91,7 @@
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-tablet-3@2x.webp") type("image/webp") 2x,
       url("../../img/programs-tablet-3.webp") type("image/webp") 1x,
       url("../../img/programs-tablet-3@2x.jpg") type("image/jpg") 2x,
@@ -99,7 +100,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
+    background-image:  linear-gradient($overley-image, $overley-image), image-set(
       url("../../img/programs-desktop-3@2x.webp") type("image/webp") 2x,
       url("../../img/programs-desktop-3.webp") type("image/webp") 1x,
       url("../../img/programs-desktop-3@2x.jpg") type("image/jpg") 2x,
@@ -160,7 +161,10 @@
 
   @media (min-width: $width-desktop) {
     min-width: 194px;
-    max-width: 420px;
+    max-width: 280px;
+    font-size: 24px;
+    line-height: 17px;
+    padding: 18px 10px 6px 18px;
   }
 }
 
@@ -168,12 +172,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 18px 15px;
+  padding: 13px 18px 14px;
   background-color: $color-white;
   border-radius: 0px 12px 12px 12px;
 
+  @media (min-width: $width-tablet) {
+    padding: 12px 18px 15px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 321px;
+    min-height: 82px;
   }
 }
 
@@ -182,6 +191,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     width: 202px;
@@ -190,7 +200,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 233px;
+    width: 237px;
     line-height: 18px;
   }
 }

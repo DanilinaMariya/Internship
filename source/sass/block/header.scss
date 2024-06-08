@@ -19,8 +19,11 @@
 }
 
 .header__button {
-  position: relative;
-  width: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 136px;
+  max-width: 200px;
   min-height: 54px;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
@@ -33,9 +36,9 @@
   border: 1px solid $color-blue;
   border-radius: 30px;
   text-align: left;
-  padding: 4px 5px 4px 21px;
+  padding: 3px 4px 3px 20px;
   cursor: pointer;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus,
@@ -56,7 +59,7 @@
   }
 
   &--activ {
-    width: 290px;
+    min-width: 290px;
     background-color: $color-blue;
     color: $color-white;
     z-index: 10;
@@ -66,7 +69,7 @@
     min-height: 56px;
 
     &--activ {
-      width: 286px;
+      min-width: 286px;
     }
   }
 }
@@ -94,9 +97,6 @@
 }
 
 .header__button-icon {
-  position: absolute;
-  top: 4px;
-  right: 5px;
   width: 46px;
   height: 46px;
   background-color: $color-blue;

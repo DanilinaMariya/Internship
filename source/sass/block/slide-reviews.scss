@@ -9,16 +9,19 @@
 }
 
 .slide-reviews__content {
-  padding: 32px 17px;
+  padding: 30px 17px 30px 15px;
   border: 2px solid $color-blue;
   border-radius: 16px;
 
   @media (min-width: $width-tablet) {
-    padding: 50px 52px;
+    padding: 50px;
+    padding-right: 51px;
     min-height: 417px;
   }
 
   @media (min-width: $width-desktop) {
+    padding: 50px;
+    padding-right: 47px;
     min-height: 483px;
   }
 }
@@ -72,7 +75,7 @@
 
   @media (min-width: $width-tablet) {
     font-size: 20px;
-    font-weight: 24px;
+    line-height: 24px;
   }
 
   @media (min-width: $width-desktop) {
@@ -126,7 +129,7 @@
   color: $color-blue;
 
   @media (min-width: $width-tablet) {
-    padding: 30px 0 25px;
+    padding: 31px 0 24px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -134,6 +137,7 @@
   @media (min-width: $width-desktop) {
     font-size: 24px;
     line-height: 26px;
+    padding: 30px 0 25px;
   }
 }
 

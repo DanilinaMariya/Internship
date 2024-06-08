@@ -1,5 +1,6 @@
 .form {
   padding: 15px;
+  padding-bottom: 27px;
   background-color: $color-blue;
   border-radius: 16px;
   width: 300px;
@@ -17,7 +18,7 @@
 
   @media (min-width: $width-tablet) {
     width: 442px;
-    padding: 30px 40px;
+    padding: 30px 40px 36px;
     margin: 0;
 
     &--light {
@@ -28,7 +29,7 @@
 
   @media (min-width: $width-desktop) {
     width: 490px;
-    padding: 30px 70px;
+    padding: 30px 70px 40px;
 
     &--light {
       padding: 60px 80px;
@@ -128,7 +129,26 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding-top: 3px;
     cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    &--city {
+      width: 260px;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    &--checkbox {
+      padding-top: 2px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &--city {
+      gap: 8px;
+    }
   }
 }
 
@@ -140,15 +160,25 @@
   }
 }
 
+.form--light .form__label--city {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
 .form__button {
+  display: flex;
+  justify-content: space-between;
   width: 260px;
-  padding: 5px 5px 5px 31px;
+  padding: 4px 4px 3px 25px;
 
   @media (min-width: $width-tablet) {
+    padding: 4px 4px 4px 32px;
     width: 352px;
   }
 
   @media (min-width: $width-desktop) {
+    padding: 4px 4px 4px 31px;
     width: 350px;
   }
 }
@@ -209,9 +239,18 @@
 }
 
 .form__label--checkbox .form__subtitle {
+  color: $color-white;
+  opacity: 1;
+
   @media (min-width: $width-tablet) {
     font-size: 12px;
     line-height: 12px;
+  }
+}
+
+.form__label--checkbox br {
+  @media (min-width: $width-tablet) {
+    display: none;
   }
 }
 
@@ -391,8 +430,8 @@
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  border: 1px solid $color-background;
-  opacity: 0.7;
+  border: 1px solid transparent;
+  background-color: $color-white;
   stroke: transparent;
 
   &--light {
@@ -422,7 +461,7 @@
 .form__input[type="checkbox"]:checked:hover + .form__checkbox,
 .form__input[type="checkbox"]:checked:focus + .form__checkbox {
   background-color: transparent;
-  border: 1px solid $color-white;
+  border-color: $color-white;
   stroke: $color-white;
   outline: none;
 

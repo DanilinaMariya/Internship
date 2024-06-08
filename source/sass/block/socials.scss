@@ -20,6 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 26px;
+  height: 26px;
   padding: 10px;
   background-color: $color-blue;
   border-radius: 50%;
@@ -31,6 +33,11 @@
 
   &:active {
     background-color: $color-dark-blue;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 36px;
+    height: 36px;
   }
 }
 

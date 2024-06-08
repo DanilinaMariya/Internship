@@ -1,5 +1,15 @@
+.news {
+  @media (max-width: 767px) {
+    padding-right: 0;
+  }
+}
+
 .news__title {
   text-align: center;
+
+  @media (max-width: 767px) {
+    padding-right: 15px;
+  }
 }
 
 .news__controls {
@@ -24,7 +34,7 @@
   width: 26px;
   height: 26px;
   text-align: center;
-  padding: 6px 0;
+  padding: 4px 0;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -46,24 +56,6 @@
     pointer-events: none;
   }
 
-  &:hover {
-    border-color: $color-blue;
-    color: $color-blue;
-  }
-
-  &:focus {
-    border-color: $color-blue;
-    color: $color-blue;
-    background-color: $color-white;
-    outline: none;
-  }
-
-  &:active {
-    background-color: $color-dark-blue;
-    color: $color-white;
-    border-color: transparent;
-  }
-
   @media (min-width: $width-tablet) {
     width: 32px;
     height: 32px;
@@ -81,17 +73,48 @@
 
 .news__pagination .swiper-pagination-bullet.swiper-bullet--visible {
   transform: scale(1);
+  opacity: 0.5;
+
+  &:hover {
+    border-color: $color-blue;
+    color: $color-blue;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: $color-blue;
+    color: $color-blue;
+    background-color: $color-white;
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    border-color: transparent;
+    opacity: 1;
+  }
+}
+
+.news__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
 }
 
 .news__controls .news__pagination.swiper-pagination {
   position: relative;
   overflow: hidden;
-  max-width: 168px;
+  max-width: 152px;
   white-space: nowrap;
 
   @media (min-width: $width-tablet) {
-    max-width: 208px;
+    max-width: 188px;
+  }
+}
+
+.news__wrapper {
+  @media (max-width: 767px) {
+    padding-right: 15px;
   }
 }
 

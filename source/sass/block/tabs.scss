@@ -12,8 +12,7 @@
 
   @media (min-width: $width-desktop) {
     width: 720px;
-    gap: 0;
-    justify-content: space-between;
+    gap: 30px;
     margin: 0 auto;
     padding: 40px 0;
   }
@@ -40,6 +39,8 @@
     border: 2px solid $color-blue;
     border-radius: 20px;
     color: $color-blue;
+    padding: 10px 14px;
+    padding-right: 15px;
   }
 
   &:hover {
@@ -63,17 +64,22 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
+
+    &--activ {
+      padding: 14px 22px;
+    }
   }
 
   @media (min-width: $width-desktop) {
-    padding: 16px 0;
+    min-width: 120px;
+    padding: 14px 0;
 
     &--activ {
-      padding: 16px 33px;
+      padding: 14px 33px;
     }
 
     &:focus {
-      padding: 16px 33px;
+      padding: 14px 33px;
     }
   }
 }

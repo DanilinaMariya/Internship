@@ -35,4 +35,18 @@
   &:active {
     stroke: $color-dark-blue;
   }
+
+  @media (min-width: $width-tablet) {
+    width: 22px;
+    height: 22px;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.modal__icon {
+  @media (min-width: $width-tablet) {
+    width: 22px;
+    height: 22px;
+  }
 }

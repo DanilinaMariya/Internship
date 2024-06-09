@@ -30,10 +30,6 @@
   border: 2px solid $color-blue;
   border-radius: 14px;
 
-  &--open {
-    background-color: $color-blue;
-  }
-
   &:hover {
     background-color: $color-white;
   }
@@ -53,6 +49,8 @@
 }
 
 .faq__content--open {
+  background-color: $color-blue;
+
   &:hover {
     background-color: $color-blue;
   }
@@ -92,7 +90,7 @@
 .faq__content-title br {
   display: none;
 
-  @media (min-width: $width-tablet) and (max-width: 1439px) {
+  @media (min-width: $width-tablet) and (width <= 1439px) {
     display: inline;
   }
 }
@@ -213,6 +211,7 @@
   border-color: $color-blue;
   background-color: transparent;
   outline: none;
+
   &::after,
   &::before {
     background-color: $color-blue;

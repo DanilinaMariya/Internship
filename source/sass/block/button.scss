@@ -36,11 +36,6 @@
     pointer-events: none;
   }
 
-  &--light {
-    border-color: $color-white;
-    color: $color-white;
-  }
-
   @media (min-width: $width-tablet) {
     padding-left: 30px;
     gap: 31px;
@@ -51,6 +46,9 @@
 }
 
 .button--light {
+  border-color: $color-white;
+  color: $color-white;
+
   &:hover {
     background-color: $color-white;
     color: $color-blue;
@@ -79,11 +77,13 @@
   stroke: $color-blue;
   transform: rotate(45deg);
 }
+
 .button:active .button__icon {
   stroke: $color-blue;
   transform: rotate(45deg);
   opacity: 0.7;
 }
+
 .button:focus .button__icon {
   transform: rotate(45deg);
 }
@@ -96,6 +96,7 @@
 .button--light:hover .button__icon {
   stroke: $color-white;
 }
+
 .button--light:active .button__icon {
   stroke: $color-white;
 }
@@ -117,7 +118,7 @@
   }
 }
 
-.button--light .button__icon-wrapper  {
+.button--light .button__icon-wrapper {
   background-color: $color-white;
 }
 

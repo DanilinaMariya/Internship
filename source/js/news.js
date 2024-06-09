@@ -51,6 +51,7 @@ const swiperNews = new Swiper('.news__swiper', {
   simulateTouch: true,
   loopAddBlankSlides: true,
   autoplay: false,
+  watchSlidesProgress: true,
 
   breakpoints: {
     320: {

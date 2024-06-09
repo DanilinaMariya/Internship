@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INTERNSHIP.Глобальный профессиональный опыт обучения за рубежом">
     <title>INTERNSHIP</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -327,7 +328,7 @@
           <source type="image/webp" srcset="./img/grant-mobile.webp 1x, ./img/grant-mobile@2x.webp 2x" width="290" height="200">
           <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/grant-desktop.jpg 1x, ./img/grant-desktop@2x.jpg 2x" width="498" height="363">
           <source type="image/jpg" media="(min-width: 768px)" srcset="./img/grant-tablet.jpg 1x, ./img/grant-tablet@2x.jpg 2x" width="678" height="375">
-          <img class="grant__image" src="./img/grant-mobile.jpg" srcset="./img/grant-mobile.jpg 1x, ./img/grant-mobile@2x.jpg 2x" width="290" height="200" alt="Фото столба с указателями.">
+          <img src="./img/grant-mobile.jpg" srcset="./img/grant-mobile.jpg 1x, ./img/grant-mobile@2x.jpg 2x" width="290" height="200" alt="Фото столба с указателями.">
         </picture>
       </div>
       <div class="grant__info grant-info">
@@ -739,9 +740,9 @@
                 <div class="slide-reviews__user">
                   <picture>
                     <source type="image/webp" srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" width="60" height="60">
-                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" loading="lazy" alt="Фото пользователя.">
                   </picture>
-                  <h4 class="slide-reviews__name">Лола Алекс</h4>
+                  <h3 class="slide-reviews__name">Лола Алекс</h3>
                 </div>
                 <div class="slide-reviews__info">
                   <div class="slide-reviews__info-wrapper">
@@ -764,9 +765,9 @@
                 <div class="slide-reviews__user">
                   <picture>
                     <source type="image/webp" srcset="img/reviews-2.webp 1x, img/reviews-2@2x.webp 2x" width="60" height="60">
-                    <img class="slide-reviews__image" src="img/reviews-2.png" srcset="img/reviews-2.png 1x, img/reviews-2@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                    <img class="slide-reviews__image" src="img/reviews-2.png" srcset="img/reviews-2.png 1x, img/reviews-2@2x.png 2x" width="60" height="60" loading="lazy" alt="Фото пользователя.">
                   </picture>
-                  <h4 class="slide-reviews__name">Давид Иванов</h4>
+                  <h3 class="slide-reviews__name">Давид Иванов</h3>
                 </div>
                 <div class="slide-reviews__info">
                   <div class="slide-reviews__info-wrapper">
@@ -789,9 +790,9 @@
                 <div class="slide-reviews__user">
                   <picture>
                     <source type="image/webp" srcset="img/reviews-1.webp 1x, img/reviews-1@2x.webp 2x" width="60" height="60">
-                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" alt="Фото пользователя.">
+                    <img class="slide-reviews__image" src="img/reviews-1.png" srcset="img/reviews-1.png 1x, img/reviews-1@2x.png 2x" width="60" height="60" loading="lazy" alt="Фото пользователя.">
                   </picture>
-                  <h4 class="slide-reviews__name">Лола Алекс</h4>
+                  <h3 class="slide-reviews__name">Лола Алекс</h3>
                 </div>
                 <div class="slide-reviews__info">
                   <div class="slide-reviews__info-wrapper">
@@ -853,7 +854,7 @@
             <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="290" height="240">
             <source type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1240" height="486">
             <source type="image/png" media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="678" height="500">
-            <img class="contacts__image" src="img/map-mobile.png" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x" width="290" height="240" alt="Как проехать.">
+            <img class="contacts__image" src="img/map-mobile.png" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x" width="290" height="240" loading="lazy" alt="Как проехать.">
           </picture>
         </div>
       </div>
@@ -877,15 +878,15 @@
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
-                <span class="form__subtitle">Ваше сообщение</span>
-                <textarea class="form__input form__input--textarea" name="message" required></textarea>
-              </label>
+              <div class="form__label">
+                <label class="form__subtitle" for="textarea">Ваше сообщение</label>
+                <textarea class="form__input form__input--textarea" name="message" id="textarea" required></textarea>
+              </div>
             </li>
             <li class="form__item ">
               <label class="form__label form__label--city">
                 <span class="form__subtitle">Выберите город</span>
-                <input class="form__input form__input--city" type="text" name="city" value="" readonly>
+                <input class="form__input form__input--city" type="text" name="city" readonly>
                 <svg class="form__input-icon" width="16" height="16">
                   <use href="/__spritemap#sprite-dropdown"></use>
                 </svg>
@@ -914,8 +915,8 @@
           </ul>
           <button class="form__button button button--light" type="submit">
             <span class="form__button-description button__description">отправить</span>
-            <span class="form__button__icon-wrapper button__icon-wrapper">
-              <svg class="form__button__icon button__icon" width="10" height="10">
+            <span class="form__button-wrapper button__icon-wrapper">
+              <svg class="form__button-icon button__icon" width="10" height="10">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </span>
@@ -957,7 +958,7 @@
       </div>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link" href="https://vk.com/htmlacademy">
+          <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">Группа Вконтакте.</span>
             <svg class="socials__icon" width="16" height="16">
               <use href="/__spritemap#sprite-vk"></use>
@@ -965,7 +966,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="https://ok.ru/">
+          <a class="socials__link" href="https://ok.ru/" target="_blank">
             <span class="visually-hidden">Страница в Однокласниках.</span>
             <svg class="socials__icon" width="16" height="16">
               <use href="/__spritemap#sprite-ok"></use>
@@ -973,7 +974,7 @@
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="https://www.reddit.com/">
+          <a class="socials__link" href="https://www.reddit.com/" target="_blank">
             <span class="visually-hidden">Страница в Reddit.</span>
             <svg class="socials__icon" width="16" height="16">
               <use href="/__spritemap#sprite-reddit"></use>
@@ -1008,7 +1009,7 @@
           <li class="form__item ">
             <label class="form__label form__label--city">
               <span class="form__subtitle">Выберите город</span>
-              <input class="form__input form__input--city" type="text" name="city" value="" readonly>
+              <input class="form__input form__input--city" type="text" name="city" readonly>
               <svg class="form__input-icon" width="16" height="16">
                 <use href="/__spritemap#sprite-dropdown"></use>
               </svg>
@@ -1037,8 +1038,8 @@
         </ul>
         <button class="form__button button" type="submit">
           <span class="form__button-description button__description">отправить</span>
-          <span class="form__button__icon-wrapper button__icon-wrapper">
-            <svg class="form__button__icon button__icon" width="10" height="10">
+          <span class="form__button-wrapper button__icon-wrapper">
+            <svg class="form__button-icon button__icon" width="10" height="10">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </span>

@@ -14,4 +14,3 @@ const formInputValidate = (el) => {
 formButton.forEach((el) => {
   el.addEventListener('click', () => formInputValidate(el));
 });
-

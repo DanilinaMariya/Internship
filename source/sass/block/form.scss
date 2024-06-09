@@ -11,7 +11,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px 15px;
+    padding: 36px 15px 40px;
     background-color: $color-white;
     width: 290px;
   }
@@ -22,8 +22,9 @@
     margin: 0;
 
     &--light {
-      padding: 60px 80px;
+      padding: 55px 80px;
       width: 510px;
+      min-height: 640px;
     }
   }
 
@@ -32,8 +33,9 @@
     padding: 30px 70px 40px;
 
     &--light {
-      padding: 60px 80px;
+      padding: 53px 80px 60px;
       width: 510px;
+      min-height: 649px;
     }
   }
 }
@@ -62,15 +64,16 @@
 .form--light .form__title {
   color: $color-blue;
   line-height: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    padding: 0 0 20px;
+    padding: 0 0 17px;
     line-height: 28px;
   }
 
   @media (min-width: $width-desktop) {
+    padding-bottom: 14px;
     line-height: 36px;
   }
 }
@@ -91,21 +94,28 @@
   }
 }
 
-.form--light .form__description  {
+.form--light .form__description {
   color: $color-primary;
   text-align: center;
+  margin: 0 auto;
+  width: 194px;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+  }
 }
 
 .form__list {
   margin: 0;
-  padding: 20px 0;
+  padding: 21px 0 19px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 21px;
   list-style: none;
 
   @media (min-width: $width-tablet) {
     padding: 40px 0;
+    gap: 20px;
   }
 }
 
@@ -114,7 +124,7 @@
   gap: 15px;
 
   @media (min-width: $width-tablet) {
-    padding: 30px 0;
+    padding: 30px 0 28px;
     gap: 20px;
   }
 }
@@ -123,26 +133,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
 
   &--checkbox {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding-top: 3px;
     cursor: pointer;
   }
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &--city {
       width: 260px;
     }
   }
 
   @media (min-width: $width-tablet) {
-    &--checkbox {
-      padding-top: 2px;
-    }
+    gap: 12px;
   }
 
   @media (min-width: $width-desktop) {
@@ -161,7 +168,7 @@
 }
 
 .form--light .form__label--city {
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     width: 100%;
   }
 }
@@ -170,25 +177,24 @@
   display: flex;
   justify-content: space-between;
   width: 260px;
-  padding: 4px 4px 3px 25px;
+  padding: 4px 4px 4px 25px;
 
   @media (min-width: $width-tablet) {
-    padding: 4px 4px 4px 32px;
+    padding-left: 32px;
     width: 352px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 4px 4px 4px 31px;
+    padding-left: 31px;
     width: 350px;
   }
 }
 
 .form--light .form__button {
-  padding: 4px 4px 4px 30px;
-
   @media (min-width: $width-tablet) {
     width: 194px;
     margin: 0 auto;
+    padding: 3px 3px 3px 28px;
   }
 }
 
@@ -204,7 +210,7 @@
   }
 }
 
-.form--light .form__button-description  {
+.form--light .form__button-description {
   @media (min-width: $width-tablet) {
     width: fit-content;
   }
@@ -229,23 +235,30 @@
   }
 }
 
+
+.form__label--checkbox .form__subtitle {
+  color: $color-white;
+  opacity: 1;
+  font-size: 12px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
 .form--light .form__subtitle {
   color: $color-primary;
   max-width: 230px;
+  font-size: 14px;
 
   @media (min-width: $width-tablet) {
     max-width: 100%;
   }
 }
 
-.form__label--checkbox .form__subtitle {
-  color: $color-white;
-  opacity: 1;
-
-  @media (min-width: $width-tablet) {
-    font-size: 12px;
-    line-height: 12px;
-  }
+.form--light .form__label--checkbox .form__subtitle {
+  font-size: 12px;
 }
 
 .form__label--checkbox br {
@@ -264,7 +277,7 @@
   width: 100%;
   height: 50px;
   border-radius: 8px;
-  border: 1px solid rgb(255, 255, 255,0.3);
+  border: 1px solid rgb(255, 255, 255, 0.3);
   background-color: transparent;
   padding: 16px 25px;
   font-family: "Manrope", sans-serif;
@@ -273,18 +286,17 @@
   line-height: 14px;
   color: $color-background;
 
-  &--textarea {
-    height: auto;
-    min-height: 94px;
-  }
-
   &--city {
     padding: 16px 20px;
     cursor: pointer;
+    min-height: 52px;
   }
 }
 
 .form__input--textarea {
+  height: auto;
+  min-height: 94px;
+
   @media (min-width: $width-tablet) {
     min-height: 88px;
   }
@@ -297,11 +309,19 @@
 .form--light .form__input {
   border-color: rgba(72, 72, 72, 0.3);
   color: $color-primary;
+
+  @media (width <= 767px) {
+    height: 44px;
+
+    &--city {
+      min-height: 44px;
+    }
+  }
 }
 
 .form__input--validate:invalid {
   border-color: $color-error;
-  background-color: rgba(255, 94, 102, 0.20);
+  background-color: rgba(255, 94, 102, 0.2);
 }
 
 .form__input:hover,
@@ -323,15 +343,15 @@
 }
 
 .form--light .form__input:disabled {
-  background-color: rgba(169, 175, 183, 0.20);
-  border-color: rgba(169, 175, 183, 0.50);
+  background-color: rgba(169, 175, 183, 0.2);
+  border-color: rgba(169, 175, 183, 0.5);
 }
 
-.form__label:has(>.form__input:disabled) .form__subtitle{
+.form__label:has(>.form__input:disabled) .form__subtitle {
   opacity: 0.8;
 }
 
-.form--light .form__label:has(>.form__input:disabled) .form__subtitle{
+.form--light .form__label:has(>.form__input:disabled) .form__subtitle {
   opacity: 0.6;
 }
 
@@ -384,7 +404,7 @@
   cursor: pointer;
 
   &:nth-child(1) {
-    border-radius: 8px 8px 0 0 ;
+    border-radius: 8px 8px 0 0;
   }
 
   &:last-child {
@@ -412,14 +432,14 @@
   stroke: $color-white;
   position: absolute;
   right: 21px;
-  bottom: 16px;
+  bottom: 18px;
 }
 
-.form--light .form__input-icon  {
+.form--light .form__input-icon {
   stroke: $color-primary;
 }
 
-.form__item--open-dropdown .form__input-icon{
+.form__item--open-dropdown .form__input-icon {
   transform: rotate(180deg);
 }
 
@@ -490,10 +510,10 @@
 
 .form__input[type="checkbox"]:disabled + .form__checkbox {
   border-color: $color-white;
-  background-color: rgba(255, 255, 255, 0.60);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .form__input--validate:invalid + .form__checkbox {
-  border-color: rgba(255, 94, 102, 0.70);
-  background-color: rgba(255, 94, 102, 0.20);
+  border-color: rgba(255, 94, 102, 0.7);
+  background-color: rgba(255, 94, 102, 0.2);
 }

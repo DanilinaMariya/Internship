@@ -21,7 +21,7 @@
 }
 
 .slide-news--big .slide-news__wrapper {
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     min-height: 330px;
   }
 }
@@ -40,106 +40,117 @@
   }
 }
 
-//ФОНЫ
+// ФОНЫ
 .slide-news--interview {
-  background-image: image-set(
-    url("../../img/news-1@2x.webp") type("image/webp") 2x,
-    url("../../img/news-1.webp") type("image/webp") 1x,
-    url("../../img/news-1@2x.jpg") type("image/jpg") 2x,
-    url("../../img/news-1.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-1@2x.webp") type("image/webp") 2x,
+      url("../img/news-1.webp") type("image/webp") 1x,
+      url("../img/news-1@2x.jpg") type("image/jpg") 2x,
+      url("../img/news-1.jpg") type("image/jpg") 1x,
+    );
 }
 
 .slide-news--journey {
-  background-image: image-set(
-    url("../../img/news-2@2x.webp") type("image/webp") 2x,
-    url("../../img/news-2.webp") type("image/webp") 1x,
-    url("../../img/news-2@2x.jpg") type("image/jpg") 2x,
-    url("../../img/news-2.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-2@2x.webp") type("image/webp") 2x,
+      url("../img/news-2.webp") type("image/webp") 1x,
+      url("../img/news-2@2x.jpg") type("image/jpg") 2x,
+      url("../img/news-2.jpg") type("image/jpg") 1x,
+    );
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
-      url("../../img/news-desktop-2@2x.webp") type("image/webp") 2x,
-      url("../../img/news-desktop-2.webp") type("image/webp") 1x,
-      url("../../img/news-desktop-2@2x.jpg") type("image/jpg") 2x,
-      url("../../img/news-desktop-2.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/news-desktop-2@2x.webp") type("image/webp") 2x,
+        url("../img/news-desktop-2.webp") type("image/webp") 1x,
+        url("../img/news-desktop-2@2x.jpg") type("image/jpg") 2x,
+        url("../img/news-desktop-2.jpg") type("image/jpg") 1x,
+      );
     background-size: 116%;
   }
 }
 
 .slide-news--volunteering {
-  background-image: image-set(
-    url("../../img/news-3@2x.webp") type("image/webp") 2x,
-    url("../../img/news-3.webp") type("image/webp") 1x,
-    url("../../img/news-3@2x.jpg") type("image/jpg") 2x,
-    url("../../img/news-3.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-3@2x.webp") type("image/webp") 2x,
+      url("../img/news-3.webp") type("image/webp") 1x,
+      url("../img/news-3@2x.jpg") type("image/jpg") 2x,
+      url("../img/news-3.jpg") type("image/jpg") 1x,
+    );
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
-      url("../../img/news-desktop-3@2x.webp") type("image/webp") 2x,
-      url("../../img/news-desktop-3.webp") type("image/webp") 1x,
-      url("../../img/news-desktop-3@2x.jpg") type("image/jpg") 2x,
-      url("../../img/news-desktop-3.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/news-desktop-3@2x.webp") type("image/webp") 2x,
+        url("../img/news-desktop-3.webp") type("image/webp") 1x,
+        url("../img/news-desktop-3@2x.jpg") type("image/jpg") 2x,
+        url("../img/news-desktop-3.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
 .slide-news--career {
-  background-image: image-set(
-    url("../../img/news-4@2x.webp") type("image/webp") 2x,
-    url("../../img/news-4.webp") type("image/webp") 1x,
-    url("../../img/news-4@2x.jpg") type("image/jpg") 2x,
-    url("../../img/news-4.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-4@2x.webp") type("image/webp") 2x,
+      url("../img/news-4.webp") type("image/webp") 1x,
+      url("../img/news-4@2x.jpg") type("image/jpg") 2x,
+      url("../img/news-4.jpg") type("image/jpg") 1x,
+    );
 
   @media (min-width: $width-desktop) {
-    background-image: image-set(
-      url("../../img/news-desktop-4@2x.webp") type("image/webp") 2x,
-      url("../../img/news-desktop-4.webp") type("image/webp") 1x,
-      url("../../img/news-desktop-4@2x.jpg") type("image/jpg") 2x,
-      url("../../img/news-desktop-4.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/news-desktop-4@2x.webp") type("image/webp") 2x,
+        url("../img/news-desktop-4.webp") type("image/webp") 1x,
+        url("../img/news-desktop-4@2x.jpg") type("image/jpg") 2x,
+        url("../img/news-desktop-4.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
 .slide-news--big.slide-news--interview {
   @media (min-width: $width-desktop) {
-    background-image: image-set(
-      url("../../img/news-desktop-big-1@2x.webp") type("image/webp") 2x,
-      url("../../img/news-desktop-big-1.webp") type("image/webp") 1x,
-      url("../../img/news-desktop-big-1@2x.jpg") type("image/jpg") 2x,
-      url("../../img/news-desktop-big-1.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/news-desktop-big-1@2x.webp") type("image/webp") 2x,
+        url("../img/news-desktop-big-1.webp") type("image/webp") 1x,
+        url("../img/news-desktop-big-1@2x.jpg") type("image/jpg") 2x,
+        url("../img/news-desktop-big-1.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
 .slide-news--big.slide-news--journey {
-  background-image: image-set(
-    url("../../img/news-desktop-big-2.webp") type("image/webp") 1x,
-    url("../../img/news-desktop-big-2.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-desktop-big-2.webp") type("image/webp") 1x,
+      url("../img/news-desktop-big-2.jpg") type("image/jpg") 1x,
+    );
 }
 
 .slide-news--big.slide-news--volunteering {
-  background-image: image-set(
-    url("../../img/news-desktop-big-3.webp") type("image/webp") 1x,
-    url("../../img/news-desktop-big-3.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-desktop-big-3.webp") type("image/webp") 1x,
+      url("../img/news-desktop-big-3.jpg") type("image/jpg") 1x,
+    );
 }
 
 .slide-news--big.slide-news--career {
-  background-image: image-set(
-    url("../../img/news-desktop-big-4.webp") type("image/webp") 1x,
-    url("../../img/news-desktop-big-4.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/news-desktop-big-4.webp") type("image/webp") 1x,
+      url("../img/news-desktop-big-4.jpg") type("image/jpg") 1x,
+    );
 }
 
 .slide-news__date {
   position: relative;
-  padding: 12px 13px 6px 0px;
+  padding: 12px 13px 6px 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -147,7 +158,7 @@
   text-transform: uppercase;
   color: $color-blue;
   background-color: $color-background;
-  border-radius: 0px 12px 0px 0px;
+  border-radius: 0 12px 0 0;
 
   &::after,
   &::before {
@@ -155,7 +166,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/angle-news.svg");
+    background-image: url("../img/angle-news.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -173,21 +184,21 @@
 
 .slide-news__title {
   position: relative;
-  padding: 10px 18px 4px 0px;
+  padding: 10px 18px 4px 0;
   width: 200px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: $color-blue;
   background-color: $color-background;
-  border-radius: 0px 12px 0px 0px;
+  border-radius: 0 12px 0 0;
 
   &::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/angle-news.svg");
+    background-image: url("../img/angle-news.svg");
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
@@ -197,21 +208,21 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 24px;
-    padding: 11px 18px 5px 0px;
+    padding: 11px 18px 5px 0;
     width: 207px;
   }
 
   @media (min-width: $width-desktop) {
     font-size: 24px;
     line-height: 26px;
-    padding: 10px 18px 4px 0px;
+    padding: 10px 18px 4px 0;
     width: 190px;
   }
 }
 
 .swiper-slide-active .slide-news__title {
   @media (min-width: $width-desktop) {
-    padding: 18px 18px 6px 0px;
+    padding: 18px 18px 6px 0;
     width: 426px;
   }
 }
@@ -222,16 +233,16 @@
   justify-content: space-between;
   align-items: center;
   width: 263px;
-  padding: 12px 10px 10px 0px;
+  padding: 13px 10px 9px 0;
   background-color: $color-background;
-  border-radius: 0px 12px 0 0;
+  border-radius: 0 12px 0 0;
 
   &::before {
     content: "";
     position: absolute;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/angle-news.svg");
+    background-image: url("../img/angle-news.svg");
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
@@ -239,7 +250,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 12px 18px 15px 0px;
+    padding: 12px 18px 15px 0;
     gap: 16px;
     width: 240px;
   }

@@ -2,6 +2,7 @@ const aboutButton = document.querySelector('.about__button');
 const modal = document.querySelector('.modal');
 const modalButton = document.querySelector('.modal__button');
 const body = document.querySelector('body');
+const form = modal.querySelector('.modal__form');
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
 
@@ -35,3 +36,4 @@ const onDocumentClick = (evt) => {
 aboutButton.addEventListener('click',onAboutButtonClick);
 modalButton.addEventListener('click', onModalClose);
 modal.addEventListener('click', onDocumentClick);
+form.addEventListener('submit', onModalClose);

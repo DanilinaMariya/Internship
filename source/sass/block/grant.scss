@@ -16,18 +16,22 @@
   }
 }
 
-.grant__image {
+.grant__wrapper img {
   display: block;
   border-radius: 16px;
   margin: 0 auto;
-  max-width: 290px;
+  width: 290px;
+  height: 200px;
+  object-fit: cover;
 
   @media (min-width: $width-tablet) {
-    max-width: 678px;
+    width: 678px;
+    height: 375px;
   }
 
   @media (min-width: $width-desktop) {
-    max-width: 498px;
+    width: 498px;
+    height: 363px;
   }
 }
 
@@ -42,6 +46,7 @@
     width: 498px;
     padding: 30px 0 40px;
   }
+
   @media (min-width: $width-desktop) {
     line-height: 26px;
   }

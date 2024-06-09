@@ -1,6 +1,5 @@
 .slide-programs {
   border-radius: 12px;
-  background-color: $color-blue;
   visibility: hidden;
   background-color: $color-grey;
 
@@ -17,95 +16,113 @@
   visibility: visible;
 }
 
-//ФОНЫ
+// ФОНЫ
 
 .slide-programs--internships {
-  background-image: linear-gradient($overley-image, $overley-image), image-set(
-    url("../../img/programs-mobile-1@2x.webp") type("image/webp") 2x,
-    url("../../img/programs-mobile-1.webp") type("image/webp") 1x,
-    url("../../img/programs-mobile-1@2x.jpg") type("image/jpg") 2x,
-    url("../../img/programs-mobile-1.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    linear-gradient($overley-image, $overley-image),
+    image-set(
+      url("../img/programs-mobile-1@2x.webp") type("image/webp") 2x,
+      url("../img/programs-mobile-1.webp") type("image/webp") 1x,
+      url("../img/programs-mobile-1@2x.jpg") type("image/jpg") 2x,
+      url("../img/programs-mobile-1.jpg") type("image/jpg") 1x,
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-tablet-1@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-tablet-1.webp") type("image/webp") 1x,
-      url("../../img/programs-tablet-1@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-tablet-1.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-tablet-1@2x.webp") type("image/webp") 2x,
+        url("../img/programs-tablet-1.webp") type("image/webp") 1x,
+        url("../img/programs-tablet-1@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-tablet-1.jpg") type("image/jpg") 1x,
+      );
   }
 
   @media (min-width: $width-desktop) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-desktop-1@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-desktop-1.webp") type("image/webp") 1x,
-      url("../../img/programs-desktop-1@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-desktop-1.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-desktop-1@2x.webp") type("image/webp") 2x,
+        url("../img/programs-desktop-1.webp") type("image/webp") 1x,
+        url("../img/programs-desktop-1@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-desktop-1.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
 .slide-programs--volunteering {
-  background-image: linear-gradient($overley-image, $overley-image), image-set(
-    url("../../img/programs-mobile-2@2x.webp") type("image/webp") 2x,
-    url("../../img/programs-mobile-2.webp") type("image/webp") 1x,
-    url("../../img/programs-mobile-2@2x.jpg") type("image/jpg") 2x,
-    url("../../img/programs-mobile-2.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    linear-gradient($overley-image, $overley-image),
+    image-set(
+      url("../img/programs-mobile-2@2x.webp") type("image/webp") 2x,
+      url("../img/programs-mobile-2.webp") type("image/webp") 1x,
+      url("../img/programs-mobile-2@2x.jpg") type("image/jpg") 2x,
+      url("../img/programs-mobile-2.jpg") type("image/jpg") 1x,
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-tablet-2@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-tablet-2.webp") type("image/webp") 1x,
-      url("../../img/programs-tablet-2@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-tablet-2.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-tablet-2@2x.webp") type("image/webp") 2x,
+        url("../img/programs-tablet-2.webp") type("image/webp") 1x,
+        url("../img/programs-tablet-2@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-tablet-2.jpg") type("image/jpg") 1x,
+      );
   }
 
   @media (min-width: $width-desktop) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-desktop-2@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-desktop-2.webp") type("image/webp") 1x,
-      url("../../img/programs-desktop-2@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-desktop-2.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-desktop-2@2x.webp") type("image/webp") 2x,
+        url("../img/programs-desktop-2.webp") type("image/webp") 1x,
+        url("../img/programs-desktop-2@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-desktop-2.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
 .slide-programs--studies {
-  background-image: linear-gradient($overley-image, $overley-image), image-set(
-    url("../../img/programs-mobile-3@2x.webp") type("image/webp") 2x,
-    url("../../img/programs-mobile-3.webp") type("image/webp") 1x,
-    url("../../img/programs-mobile-3@2x.jpg") type("image/jpg") 2x,
-    url("../../img/programs-mobile-3.jpg") type("image/jpg") 1x,
-  );
+  background-image:
+    linear-gradient($overley-image, $overley-image),
+    image-set(
+      url("../img/programs-mobile-3@2x.webp") type("image/webp") 2x,
+      url("../img/programs-mobile-3.webp") type("image/webp") 1x,
+      url("../img/programs-mobile-3@2x.jpg") type("image/jpg") 2x,
+      url("../img/programs-mobile-3.jpg") type("image/jpg") 1x,
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-tablet-3@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-tablet-3.webp") type("image/webp") 1x,
-      url("../../img/programs-tablet-3@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-tablet-3.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-tablet-3@2x.webp") type("image/webp") 2x,
+        url("../img/programs-tablet-3.webp") type("image/webp") 1x,
+        url("../img/programs-tablet-3@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-tablet-3.jpg") type("image/jpg") 1x,
+      );
   }
 
   @media (min-width: $width-desktop) {
-    background-image:  linear-gradient($overley-image, $overley-image), image-set(
-      url("../../img/programs-desktop-3@2x.webp") type("image/webp") 2x,
-      url("../../img/programs-desktop-3.webp") type("image/webp") 1x,
-      url("../../img/programs-desktop-3@2x.jpg") type("image/jpg") 2x,
-      url("../../img/programs-desktop-3.jpg") type("image/jpg") 1x,
-    );
+    background-image:
+      linear-gradient($overley-image, $overley-image),
+      image-set(
+        url("../img/programs-desktop-3@2x.webp") type("image/webp") 2x,
+        url("../img/programs-desktop-3.webp") type("image/webp") 1x,
+        url("../img/programs-desktop-3@2x.jpg") type("image/jpg") 2x,
+        url("../img/programs-desktop-3.jpg") type("image/jpg") 1x,
+      );
   }
 }
 
@@ -137,7 +154,7 @@
   color: $color-blue;
   padding: 18px 18px 6px;
   background-color: $color-white;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
 
   &::after {
     content: "";
@@ -146,7 +163,7 @@
     right: -18px;
     width: 18px;
     height: 18px;
-    background-image: url("../../img/angle.svg");
+    background-image: url("../img/angle.svg");
     transform: rotate(-90deg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,7 +191,7 @@
   justify-content: space-between;
   padding: 13px 18px 14px;
   background-color: $color-white;
-  border-radius: 0px 12px 12px 12px;
+  border-radius: 0 12px 12px;
 
   @media (min-width: $width-tablet) {
     padding: 12px 18px 15px;

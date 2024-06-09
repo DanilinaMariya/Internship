@@ -1,7 +1,7 @@
 .programs {
   position: relative;
 
-  @media (min-width: $width-tablet) and (max-width: 1439px) {
+  @media (min-width: $width-tablet) and (width <= 1439px) {
     padding-right: 0;
   }
 }
@@ -34,7 +34,7 @@
 .programs__title {
   padding: 5px 0;
 
-  @media (min-width: $width-tablet) and (max-width: 1439px) {
+  @media (min-width: $width-tablet) and (width <= 1439px) {
     padding: 3px 0;
   }
 }
@@ -44,7 +44,7 @@
   display: flex;
   gap: 8px;
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     position: absolute;
     right: 0;
     top: -45px;
@@ -59,7 +59,7 @@
 .programs__link {
   width: fit-content;
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     position: absolute;
     left: 15px;
     bottom: 50px;

@@ -48,4 +48,7 @@ const omFormCityClick = (el) => {
 
 formCity.forEach((el) => {
   el.addEventListener('click', () => omFormCityClick(el));
+  el.oninput = (e) => {
+    e.target.value = ''; //Добавила, что бы не ставить запрет редактирования. Иначе не срабатывает валидация и можно отправить форму с пустым полем
+  };
 });

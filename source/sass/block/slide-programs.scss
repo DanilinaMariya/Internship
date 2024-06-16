@@ -153,6 +153,7 @@
   line-height: 18px;
   color: $color-blue;
   padding: 18px 18px 6px;
+  margin: 0;
   background-color: $color-white;
   border-radius: 12px 12px 0 0;
 
@@ -219,13 +220,5 @@
   @media (min-width: $width-desktop) {
     width: 237px;
     line-height: 18px;
-  }
-}
-
-.slide-programs.slide-programs--duble {
-  display: none;
-
-  @media (min-width: $width-desktop) {
-    display: block;
   }
 }

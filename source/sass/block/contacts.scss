@@ -59,6 +59,7 @@
 }
 
 .contacts__subtitle {
+  margin: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -126,5 +127,6 @@
 
 .contacts__image {
   display: block;
+  background-color: $color-grey;
   border-radius: 16px;
 }

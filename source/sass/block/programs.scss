@@ -14,7 +14,7 @@
   }
 }
 
-.programs__conteiner {
+.programs__container {
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
@@ -66,6 +66,18 @@
     gap: 30px;
     padding-left: 31px;
   }
+}
+
+.programs__link.is-disabled,
+.programs__link:not([href]) {
+  border-color: $color-grey;
+  pointer-events: none;
+  color: $color-grey;
+}
+
+.programs__link.is-disabled .programs__icon-wrapper,
+.programs__link:not([href]) .programs__icon-wrapper {
+  background-color: $color-grey;
 }
 
 .programs__swiper-controls {
